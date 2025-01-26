@@ -1,8 +1,8 @@
 /*Reset*/
 
 body, h1, h2, h3, ul, li, p, a{
-    padding:0px;
-    margin:0px;
+    padding:0rem;
+    margin:0rem;
 }
 
 a{
