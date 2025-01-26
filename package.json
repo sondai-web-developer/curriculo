@@ -1,0 +1,28 @@
+{
+  "name": "curriculo",
+  "version": "1.0.0",
+  "description": "Esse website foi feito para ser meu currículo como Desenvolvedor Web Front End e Web Designer.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sondai-web-developer/curriculo.git"
+  },
+  "author": "Leonardo Rodrigues (Sondai)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sondai-web-developer/curriculo/issues"
+  },
+  "homepage": "https://github.com/sondai-web-developer/curriculo#readme",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/plugin-transform-runtime": "^7.25.9",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  }
+}

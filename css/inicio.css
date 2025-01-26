@@ -1,0 +1,49 @@
+h1{
+    font-size:80px;
+    font-weight:300;
+    line-height: 1;
+    letter-spacing: -3px;
+}
+
+#profissoes{
+    position: relative;
+}
+
+#profissoes h2:nth-child(1){
+    margin-bottom: 155px;
+    color: #001DC4;
+}
+
+#profissoes h2:nth-child(3){
+    color: #F56911;
+}
+
+#profissoes::before,
+#profissoes::after {
+    content: '';
+    display: block;
+    background: #222222;
+    height: 5px;
+    width: 140px;
+    margin: 100px 0;
+}
+
+h2{
+    font-size:120px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing:-1px;
+}
+
+span{
+    font-size:290px;
+    color:#E1E1E1;
+    position: absolute;
+    top:25%;
+}
+
+h3{
+    font-size: 25px;
+    font-weight: 300;
+    color:#898989;
+}

@@ -1,0 +1,1 @@
+console.log('Não se esqueça de seguir com paciência e consistência em busca do que se quer.\nMesmo com medo, dando novos passos nessa direção.');
