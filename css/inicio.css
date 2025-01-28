@@ -1,55 +1,108 @@
-h1{
-    font-size:2rem;
-    font-weight:300;
+#inicio {
+    grid-column: 2;
+    margin: 5.7rem 0 3.7rem 0;
+}
+
+#nomeLeo {
+    font-weight: 300;
     line-height: 1.2;
     letter-spacing: -0.1rem;
 }
 
-#profissoes{
+#profissoes {
     position: relative;
 }
 
-#profissoes h2:nth-child(1){
-    margin-bottom: 2.7rem;
+#nomeDev {
+    margin-bottom: 2.5rem;
     color: #001DC4;
 }
 
-#profissoes h2:nth-child(3){
+#nomeDsg {
     color: #F56911;
 }
 
-#profissoes::before,
-#profissoes::after {
+#nomeLeo::after,
+#inicio > h3::before {
     content: '';
     display: block;
     background: #222222;
     height: 0.06rem;
-    width: 2.5rem;
+    width: 3rem;
     margin: 1.8rem 0;
 }
 
-h2{
-    font-size:3rem;
+#profissoes>h2 {
+    font-size: 3rem;
     font-weight: 400;
     line-height: 1;
-    letter-spacing:-0.06rem;
+    letter-spacing: -0.06rem;
 }
 
-span{
-    font-size:5rem;
-    color:#E1E1E1;
+span {
+    font-size: 5rem;
+    color: #E1E1E1;
     position: absolute;
-    top:5.4rem;
+    top: 3.6rem;
 }
 
-h3{
-    font-size: 1.2rem;
+#inicio>h3 {
+    font-size: 1.1rem;
     font-weight: 300;
-    color:#898989;
+    color: #898989;
 }
 
-@media (min-width:400px){
+@media (min-width:880px) {
+    #profissoes>h2 {
+        font-size: 3.3rem;
+    }
+
+    #nomeLeo::after{
+        margin: 3.7rem 0 2.5rem 0;
+    }
+
+    #inicio > h3::before{
+        margin: 2.5rem 0 3.7rem 0;
+    }
+
+    span{
+        font-size: 7.1rem;
+        top:0.2rem;
+    }
+
+    #nomeDev {
+        margin-bottom: 4.1rem;
+    }
+}
+
+@media (min-width:1000px) {
     #profissoes{
-        background: orange;
+        display: flex;
+        align-items: center;
+    }
+
+    span{
+        position: static;
+        margin: 0 10px;
+    }
+
+    #nomeDev {
+        margin-bottom: 0rem;
+    }
+
+    #profissoes>h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 1115px){
+    #profissoes > h2{
+        font-size: 3.2rem;
+    }
+}
+
+@media (min-width: 1300px){
+    #profissoes > h2{
+        font-size: 4.4rem;
     }
 }
