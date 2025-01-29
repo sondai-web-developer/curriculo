@@ -16,11 +16,16 @@
 
 #nomeDev {
     margin-bottom: 2.5rem;
-    color: #001DC4;
+    
+    background: linear-gradient(220.55deg, #7CF7FF 0%, #4B73FF 100%);
+    background-clip: text;
+    color: transparent;
 }
 
 #nomeDsg {
-    color: #F56911;
+    background: linear-gradient(220.55deg, #ffd3a5 0%, #FB923C 100%);
+    background-clip: text;
+    color: transparent;
 }
 
 #nomeLeo::after,
