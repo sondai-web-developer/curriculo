@@ -25,23 +25,27 @@
     letter-spacing: -1px;
     color: #222222;
     display: flex;
-    margin: 1.2rem 1.2rem 0 0;
+    margin: 1.2rem 1.2rem 0 1.2rem;
+    position: relative;
 }
 
 .topicoDev::before,
 .topicoDsg::before{
     content: '';
     display: block;
-    width:5px;
-    margin-right: 15px;
+    width:1rem;
+    height: 1rem;
+    position: absolute;
+    left: -1.7rem;
+    top: 0.1rem;
 }
 
 .topicoDev::before{
-    background: #001DC4;
+    background-image: linear-gradient(220.55deg, #7CF7FF 0%, #4B73FF 100%);
 }
 
 .topicoDsg::before{
-    background: #F56911;
+    background: linear-gradient(220.55deg, #ffd3a5 0%, #FB923C 100%);
 }
 
 .itemFormacao>h5 {

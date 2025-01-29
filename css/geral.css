@@ -32,11 +32,15 @@ h2{
 }
 
 .tituloProfissaoDev{
-    color: #001DC4;
+    background: linear-gradient(220.55deg, #7CF7FF 0%, #4B73FF 100%);
+    background-clip: text;
+    color: transparent;
 }
 
 .tituloProfissaoDsg{
-    color: #F56911;
+    background: linear-gradient(220.55deg, #FFD439 0%, #FF7A00 100%);
+    background-clip: text;
+    color: transparent;
     margin-top: 3.7rem;
 }
 
