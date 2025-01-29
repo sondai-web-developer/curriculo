@@ -1,9 +1,43 @@
-h1, h3{
+h1, h3, h4, h5{
     font-family: 'Roboto Mono';
 }
 
 h2{
     font-family: 'Oswald';
+}
+
+.nomeSessao{
+    color:#898989;
+    font-size: 2.3rem;
+    font-weight:400;
+    letter-spacing: 2px;
+}
+
+.nomeSessao::after{
+    content: '';
+    display: block;
+    background: #222222;
+    height: 0.06rem;
+    width: 3rem;
+    margin: 1.2rem 0 1.5rem;
+}
+
+.tituloProfissaoDev,
+.tituloProfissaoDsg{
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.tituloProfissaoDev{
+    color: #001DC4;
+}
+
+.tituloProfissaoDsg{
+    color: #F56911;
+    margin-top: 3.7rem;
 }
 
 span{
@@ -34,4 +68,10 @@ body{
     body{
         grid-template-columns: 15rem auto 15rem;
     }
+}
+
+.listaItens{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
