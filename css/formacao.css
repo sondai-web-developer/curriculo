@@ -1,6 +1,13 @@
 #formacao {
-    grid-column: 2;
     margin: 3.7rem 0;
+}
+
+#listaItens{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+    column-gap: 1.5rem;
+    row-gap: 2.5rem;
+    justify-items: center;
 }
 
 .itemFormacao {
@@ -9,7 +16,7 @@
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-
+    
     -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.10);
     -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.10);
     box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.10);
@@ -53,13 +60,19 @@
     margin: 0 1.2rem 1.2rem 1.2rem;
 }
 
+@media (min-width:420px){
+    #listaItens{
+        justify-items: start;
+    }
+}
+
 @media (min-width:1115px){
     #formacao{
         display: grid;
         grid-template-columns: 275px 2fr;
         column-gap: 70px;
     }
-
+    
     #formacao > ul:nth-child(5){
         margin-top: 60px;
     }
