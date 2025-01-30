@@ -17,15 +17,16 @@
 #nomeDev {
     margin-bottom: 2.5rem;
     
-    background: linear-gradient(220.55deg, #7CF7FF 0%, #4B73FF 100%);
+    background: linear-gradient(190deg, #15efff 0%, #4B73FF 100%);
     background-clip: text;
     color: transparent;
 }
 
 #nomeDsg {
-    background: linear-gradient(220.55deg, #ffd3a5 0%, #FB923C 100%);
+    background: linear-gradient(190deg, #ffd3a5 0%, #FB923C 100%);
     background-clip: text;
     color: transparent;
+    padding-bottom: 0.7rem; /*Essa linha de código é porque esse efeito de gradiente tava cortando a letra 'g'. Então essa linha serve pra lidar com esse problema*/
 }
 
 #nomeLeo::after,
@@ -103,7 +104,7 @@ span {
 
 @media (min-width: 1115px){
     #profissoes > h2{
-        font-size: 3.2rem;
+        font-size: 3.1rem;
     }
 }
 
