@@ -4,7 +4,7 @@
 }
 
 .itemHabilidades>h4 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
     letter-spacing: -1px;
     color: #222222;
@@ -13,9 +13,10 @@
 
 .itemHabilidades>p{
     color: #898989;
-    font-size: 1rem;
+    font-size: 0.8rem;
     letter-spacing: 0px;
     font-weight: 400;
+    line-height: 1.3;
     margin-top: 0.6rem;
     margin-left: 2.0rem;
 }
