@@ -1,8 +1,4 @@
-#formacao {
-    margin: 3.7rem 0;
-}
-
-#listaItens{
+.listaFormacao{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
     column-gap: 1.5rem;
@@ -61,7 +57,7 @@
 }
 
 @media (min-width:420px){
-    #listaItens{
+    .listaFormacao{
         justify-items: start;
     }
 }
@@ -75,5 +71,9 @@
     
     #formacao > ul:nth-child(5){
         margin-top: 60px;
+    }
+
+    .listaFormacao{
+        grid-column: 2/-1;
     }
 }
