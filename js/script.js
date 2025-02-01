@@ -1,3 +1,3 @@
-import nomeEProfissoes from "./funcoes/nome_e_profissoes.js";
+import nomeProfissoesEmail from "./funcoes/nome_profissoes_email.js";
 
-nomeEProfissoes();
+nomeProfissoesEmail();

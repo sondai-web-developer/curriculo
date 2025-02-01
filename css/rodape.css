@@ -1,0 +1,27 @@
+#rodape{
+    grid-column: 1/-1;
+    text-align: center;
+    padding: 1.2rem 0;
+    background: linear-gradient(190deg, #ffd3a5 0%, #FB923C 100%);
+}
+
+#rodape>p,
+#rodape>span{
+    color:#FFFEFC;
+}
+
+#rodape>p:nth-child(1){
+    font-weight: 300;
+}
+
+#rodape>p:nth-child(2),
+#rodape>p>span{
+    font-weight: 500;
+}
+
+#rodape>p>span{
+    font-family: 'Roboto Mono';
+    font-size: 1.6rem;
+    padding: 0px;
+    margin: 0px;
+}

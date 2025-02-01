@@ -1,9 +1,10 @@
 import debounce from './debounce.js';
 
-export default function nomeEProfissoes() {
+export default function nomeProfissoesEmail() {
     let nomeLeoSelecao = document.getElementById('nomeLeo'),
         nomeDevSelecao = document.getElementById('nomeDev'),
-        nomeDsgSelecao = document.getElementById('nomeDsg');
+        nomeDsgSelecao = document.getElementById('nomeDsg'),
+        emailSelecao = document.getElementById('email');        
 
     const eventos = ['DOMContentLoaded', 'resize'],
         nomeLeoMesmaLinha = `Leonardo Rodrigues da Silva`,
@@ -11,7 +12,9 @@ export default function nomeEProfissoes() {
         nomeDevMesmaLinha = `Desenvolvedor Web Front End`,
         nomeDevQuebrado = `Desenvolvedor Web<br>Front End`,
         nomeDsgMesmaLinha = `Web Designer`,
-        nomeDsgQuebrado = `Web<br>Designer`;
+        nomeDsgQuebrado = `Web<br>Designer`,
+        emailMesmaLinha = `leonardo.rodrigues199506@gmail.com`,
+        emailQuebrado = `leonardo.rodrigues199506<br>@gmail.com`;
 
     function quebrarRecuperarLinhas() {
         let larguraTela = window.innerWidth;
@@ -31,6 +34,12 @@ export default function nomeEProfissoes() {
         if(larguraTela >= 1000){
             nomeDevSelecao.innerHTML = nomeDevQuebrado;
             nomeDsgSelecao.innerHTML = nomeDsgQuebrado;
+        }
+
+        if(larguraTela >= 570){
+            emailSelecao.innerHTML = emailMesmaLinha;
+        }else{
+            emailSelecao.innerHTML = emailQuebrado;
         }
     }
 
