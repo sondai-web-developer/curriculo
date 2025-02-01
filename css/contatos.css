@@ -1,0 +1,28 @@
+#contatos{
+    margin-top: 3.7rem;
+}
+
+#listaContatos{
+    margin: 6.2rem 0;
+}
+
+.itemContato{
+    display: flex;
+    align-items: flex-start;
+}
+
+.itemContato:nth-child(n+2){
+    margin-top: 3.1rem;
+}
+
+.itemContato>img{
+    margin-right: 0.6rem;
+    width: 1.4rem;
+    height: auto;
+}
+
+.itemContato>p,
+.itemContato>a{
+    font-size:1.1rem;
+    color:#222222;
+}

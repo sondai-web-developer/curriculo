@@ -45,7 +45,7 @@
     letter-spacing: -0.06rem;
 }
 
-span {
+#profissoes > span {
     font-size: 5rem;
     color: #E1E1E1;
     position: absolute;
