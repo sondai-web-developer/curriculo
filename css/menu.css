@@ -1,0 +1,121 @@
+#menu {
+    position: fixed;
+    width: 100%;
+    z-index: 2000;
+}
+
+#menuNav {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    right: -5000px;
+    top: 0px;
+    padding: 5rem 1.2rem 3.1rem 1.2rem;
+    background: #FFFEFC;
+}
+
+#menuNav>ul>li>a {
+    text-align: center;
+    padding: 1.2rem 0;
+    text-transform: uppercase;
+    color: #222222;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+#menuNav>ul>li:nth-child(n+2)>a {
+    margin-top: 1.8rem;
+}
+
+/*#menuNav>ul>li:first-child>a{ link ativo
+    font-weight: 600;
+    color: #001DC4;
+}
+
+#menuNav>ul>li:first-child>a::before{ link ativo
+    content: '-';
+    font-weight: 700;
+}*/
+
+#iconeMenu {
+    display: block;
+    width: 1.6rem;
+    height: 1.6rem;
+    color: #222222;
+    border-top: 0.06rem solid currentColor;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1500;
+    right: 1.2rem;
+    top: 1.2rem;
+}
+
+#iconeMenu::before,
+#iconeMenu::after {
+    content: "";
+    display: block;
+    height: 0.06rem;
+    margin-top: 0.5rem;
+    background: currentColor;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+#iconeMenu.transformarIcone {
+    border-top-color: transparent;
+}
+
+#iconeMenu.transformarIcone::before {
+    margin-top: 0px;
+    top: 8px;
+    transform: rotate(45deg);
+}
+
+#iconeMenu.transformarIcone::after {
+    margin-top: 0px;
+    top: 7px;
+    transform: rotate(135deg);
+}
+
+@keyframes exibirMenuNav {
+    from {
+        opacity: 0;
+        transform: translate3d(30px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+#menuNav.exibirMenuNav {
+    right: 0px;
+    animation: exibirMenuNav 0.3s forwards;
+}
+
+@media (min-width: 680px) {
+    #iconeMenu {
+        display: none;
+    }
+
+    #menuNav {
+        position: static;
+        padding: 0.8rem 0;
+    }
+
+    #menuNav>ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    #menuNav>ul>li>a {
+        padding: 0.3rem;
+    }
+
+    #menuNav>ul>li:nth-child(n+2)>a {
+        margin-top: 0rem;
+        margin-left: 1.8rem;
+    }
+
+}
