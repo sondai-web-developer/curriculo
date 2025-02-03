@@ -1,4 +1,4 @@
-#rodape{
+#rodape {
     grid-column: 1/-1;
     text-align: center;
     padding: 1.2rem 0;
@@ -6,22 +6,43 @@
 }
 
 #rodape>p,
-#rodape>span{
-    color:#FFFEFC;
+#rodape>span {
+    color: #FFFEFC;
 }
 
-#rodape>p:nth-child(1){
+#rodape>p:nth-child(1) {
     font-weight: 300;
 }
 
 #rodape>p:nth-child(2),
-#rodape>p>span{
+#rodape>p>span {
     font-weight: 500;
 }
 
-#rodape>p>span{
+#rodape>p>span {
     font-family: 'Roboto Mono';
     font-size: 1.6rem;
     padding: 0px;
     margin: 0px;
+}
+
+#nomeLeoRodape {
+    width: 18.5rem;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+@media (min-width:500px) {
+    #nomeLeoRodape:hover::before,
+    #nomeLeoRodape:hover::after {
+        content: '-';
+    }
+
+    #nomeLeoRodape:hover::before {
+        margin-right: 5px;
+    }
+
+    #nomeLeoRodape:hover::after {
+        margin-left: 5px;
+    }
 }
