@@ -4,7 +4,7 @@ export default function nomeProfissoesEmail() {
     let nomeLeoSelecao = document.getElementById('nomeLeo'),
         nomeDevSelecao = document.getElementById('nomeDev'),
         nomeDsgSelecao = document.getElementById('nomeDsg'),
-        emailSelecao = document.getElementById('email');        
+        emailSelecao = document.getElementById('email');
 
     const eventos = ['DOMContentLoaded', 'resize'],
         nomeLeoMesmaLinha = `Leonardo Rodrigues da Silva`,
@@ -24,21 +24,21 @@ export default function nomeProfissoesEmail() {
             nomeDevSelecao.innerHTML = nomeDevQuebrado;
             nomeDsgSelecao.innerHTML = nomeDsgQuebrado;
         }
-        
+
         if (larguraTela >= 880) {
             nomeLeoSelecao.innerHTML = nomeLeoMesmaLinha;
             nomeDevSelecao.innerHTML = nomeDevMesmaLinha;
             nomeDsgSelecao.innerHTML = nomeDsgMesmaLinha;
         }
-        
-        if(larguraTela >= 1000){
+
+        if (larguraTela >= 1000) {
             nomeDevSelecao.innerHTML = nomeDevQuebrado;
             nomeDsgSelecao.innerHTML = nomeDsgQuebrado;
         }
 
-        if(larguraTela >= 570){
+        if (larguraTela >= 570) {
             emailSelecao.innerHTML = emailMesmaLinha;
-        }else{
+        } else {
             emailSelecao.innerHTML = emailQuebrado;
         }
     }
@@ -51,6 +51,12 @@ export default function nomeProfissoesEmail() {
         });
     }
 
-    addWindowEvents();
+    function init() {
+        if (nomeLeoSelecao && nomeDevSelecao && nomeDsgSelecao && emailSelecao) {
+            addWindowEvents();
+        }
+    }
+
+    init();
 
 }
