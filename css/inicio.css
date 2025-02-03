@@ -71,7 +71,7 @@
         margin: 2.5rem 0 3.7rem 0;
     }
 
-    span{
+    #profissoes > span{
         font-size: 7.1rem;
         top:0.2rem;
     }
@@ -81,15 +81,26 @@
     }
 }
 
+@media (min-width:985px){
+    #profissoes>h2{
+       font-size: 3rem;
+    }
+
+    #profissoes > span{
+        top:-0.1rem;
+    }
+}
+
 @media (min-width:1000px) {
     #profissoes{
         display: flex;
         align-items: center;
     }
 
-    span{
+    #profissoes > span{
         position: static;
-        margin: 0 10px;
+        font-size: 6rem;
+        margin: 0 8px;
     }
 
     #nomeDev {
@@ -105,10 +116,18 @@
     #profissoes > h2{
         font-size: 3.1rem;
     }
+
+    #profissoes > span{
+        font-size: 8rem;
+    }
 }
 
 @media (min-width: 1300px){
     #profissoes > h2{
         font-size: 4.4rem;
+    }
+
+    #profissoes > span{
+        font-size: 11rem;
     }
 }
