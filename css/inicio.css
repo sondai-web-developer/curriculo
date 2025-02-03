@@ -1,9 +1,9 @@
 #inicio {
-    margin: 5.7rem 0 3.7rem 0;
+    margin: 7rem 0 3.7rem 0;
 }
 
 #nomeLeo {
-    font-size:2rem;
+    font-size:1.7rem;
     font-weight: 300;
     line-height: 1.2;
     letter-spacing: -0.1rem;
@@ -100,7 +100,7 @@
     #profissoes > span{
         position: static;
         font-size: 6rem;
-        margin: 0 8px;
+        margin: 0 0.5rem;
     }
 
     #nomeDev {
@@ -124,10 +124,11 @@
 
 @media (min-width: 1300px){
     #profissoes > h2{
-        font-size: 4.4rem;
+        font-size: 4rem;
     }
 
     #profissoes > span{
-        font-size: 11rem;
+        font-size: 9rem;
+        margin: 0 1rem;
     }
 }
