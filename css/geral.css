@@ -74,7 +74,7 @@ body{
 }
 
 #formacao, #habilidades{
-    margin: 3.7rem 0;
+    padding: 3.7rem 0;
 }
 
 @media (min-width:680px){
