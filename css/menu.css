@@ -27,15 +27,15 @@
     margin-top: 1.8rem;
 }
 
-/*#menuNav>ul>li:first-child>a{ link ativo
+#menuNav>ul>li>a.destacarItem{
     font-weight: 600;
     color: #001DC4;
 }
 
-#menuNav>ul>li:first-child>a::before{ link ativo
+#menuNav>ul>li>a.destacarItem::before{
     content: '-';
     font-weight: 700;
-}*/
+}
 
 #iconeMenu {
     display: block;
@@ -66,14 +66,14 @@
 }
 
 #iconeMenu.transformarIcone::before {
-    margin-top: 0px;
-    top: 8px;
+    margin-top: 0;
+    top: 0.5rem;
     transform: rotate(45deg);
 }
 
 #iconeMenu.transformarIcone::after {
-    margin-top: 0px;
-    top: 7px;
+    margin-top: 0;
+    top: 0.4rem;
     transform: rotate(135deg);
 }
 
